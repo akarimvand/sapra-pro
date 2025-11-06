@@ -20,6 +20,9 @@
         .typing-text { font-size: 2rem; font-weight: 700; color: #e11d48; opacity: 0; animation: fadeInUp 1.5s ease-out 0.5s forwards; }
         @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         
+        .logo-animate { opacity: 0; animation: logoAppear 2s ease-out forwards; }
+        @keyframes logoAppear { 0% { opacity: 0; transform: scale(0.5); } 50% { opacity: 1; transform: scale(1.1); } 100% { opacity: 1; transform: scale(1); } }
+        
         .fade-out { animation: fadeOut 0.5s forwards; }
         @keyframes fadeOut { to { opacity: 0; visibility: hidden; } }
         
@@ -57,7 +60,7 @@
     <div id="loadingScreen">
         <div class="flex flex-col items-center justify-center min-h-screen text-center relative z-10">
             <div class="flex-1 flex flex-col items-center justify-center">
-                <img src="logo.png" alt="لوگو" class="w-64 h-64 mb-4 object-contain">
+                <img src="logo.png" alt="لوگو" class="w-64 h-64 mb-4 object-contain logo-animate">
                 <h2 class="typing-text mb-4">پرامپت ساز هوشمند</h2>
                 <div class="loader mb-4"></div>
                 <p class="text-gray-700 text-sm">در حال بارگذاری...</p>
