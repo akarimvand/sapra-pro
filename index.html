@@ -57,15 +57,17 @@
     <!-- Loading Screen -->
     <div id="loadingScreen">
         <div class="flex flex-col items-center justify-center min-h-screen text-center relative z-10">
-            <img src="logo.png" alt="لوگو" class="w-80 h-80 mb-6 object-contain">
-            <h2 class="typing-text mb-6">پرامپت ساز هوشمند</h2>
-            <div class="loader mb-8"></div>
-            <p class="text-gray-700 text-sm">در حال بارگذاری...</p>
-        </div>
-        <div class="absolute bottom-8 left-0 right-0 text-center z-10">
-            <p class="text-gray-600 text-xs mb-1">توسعه یافته توسط</p>
-            <p class="text-gray-800 text-sm font-bold">Amin Naseri Karimvand</p>
-            <p class="text-gray-600 text-xs">akarimvand@gmail.com</p>
+            <div class="flex-1 flex flex-col items-center justify-center">
+                <img src="logo.png" alt="لوگو" class="w-64 h-64 mb-4 object-contain">
+                <h2 class="typing-text mb-4">پرامپت ساز هوشمند</h2>
+                <div class="loader mb-4"></div>
+                <p class="text-gray-700 text-sm">در حال بارگذاری...</p>
+            </div>
+            <div class="pb-8">
+                <p class="text-gray-600 text-xs mb-1">توسعه یافته توسط</p>
+                <p class="text-gray-800 text-sm font-bold">Amin Naseri Karimvand</p>
+                <p class="text-gray-600 text-xs">akarimvand@gmail.com</p>
+            </div>
         </div>
     </div>
     
@@ -97,10 +99,10 @@
     </div>
 
     <!-- Main Content -->
-    <div class="max-w-md mx-auto px-3 py-4 pb-24">
+    <div class="max-w-md mx-auto px-3 py-4 pb-20 h-screen overflow-hidden flex flex-col">
         <!-- Initial Choice Page -->
-        <div id="choicePage">
-            <div class="material-card p-6 mb-4">
+        <div id="choicePage" class="flex-1 flex items-center justify-center">
+            <div class="material-card p-6 w-full max-w-sm">
                 <div class="text-center mb-6">
                     <img src="logo.png" alt="لوگو" class="w-64 h-64 mx-auto mb-4 object-contain">
                     <h2 class="text-2xl font-bold text-gray-900 mb-2">چگونه میخواهید شروع کنید؟</h2>
@@ -129,12 +131,12 @@
             </div>
         </div>
         
-        <div id="mainContent" class="hidden">
+        <div id="mainContent" class="hidden flex-1 overflow-y-auto">
             <div id="pageContainer"></div>
         </div>
 
         <!-- Result Page -->
-        <div id="resultPage" class="hidden">
+        <div id="resultPage" class="hidden flex-1 overflow-y-auto">
             <div class="material-card p-4 mb-4">
                 <div class="flex items-center gap-3 mb-4">
                     <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
