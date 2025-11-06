@@ -101,33 +101,31 @@
     <!-- Main Content -->
     <div class="max-w-md mx-auto px-3 py-4 pb-20 h-screen overflow-hidden flex flex-col">
         <!-- Initial Choice Page -->
-        <div id="choicePage" class="flex-1 flex items-center justify-center">
-            <div class="material-card p-6 w-full max-w-sm">
-                <div class="text-center mb-4">
-                    <img src="logo.png" alt="لوگو" class="w-48 h-48 mx-auto mb-2 object-contain">
-                    <h2 class="text-xl font-bold text-gray-900 mb-1">چگونه میخواهید شروع کنید؟</h2>
-                    <p class="text-gray-600 text-sm">یکی از گزینه ها را انتخاب کنید</p>
-                </div>
-                <div class="space-y-3">
-                    <button id="presetChoice" class="w-full material-btn bg-rose-500 text-white p-6 rounded-lg text-right">
-                        <div class="flex items-center gap-4">
-                            <span class="material-icons text-4xl">bolt</span>
-                            <div>
-                                <div class="font-bold text-lg">پرامپت آماده</div>
-                                <div class="text-sm opacity-90">استفاده سریع از سبکهای از پیش آماده</div>
-                            </div>
+        <div id="choicePage" class="flex-1 flex flex-col items-center justify-center">
+            <div class="text-center mb-4">
+                <img src="logo.png" alt="لوگو" class="w-48 h-48 mx-auto mb-2 object-contain">
+                <h2 class="text-xl font-bold text-gray-900 mb-1">چگونه میخواهید شروع کنید؟</h2>
+                <p class="text-gray-600 text-sm">یکی از گزینه ها را انتخاب کنید</p>
+            </div>
+            <div class="space-y-3 w-full">
+                <button id="presetChoice" class="w-full material-btn bg-rose-500 text-white p-6 rounded-lg text-right">
+                    <div class="flex items-center gap-4">
+                        <span class="material-icons text-4xl">bolt</span>
+                        <div>
+                            <div class="font-bold text-lg">پرامپت آماده</div>
+                            <div class="text-sm opacity-90">استفاده سریع از سبکهای از پیش آماده</div>
                         </div>
-                    </button>
-                    <button id="customChoice" class="w-full material-btn bg-pink-600 text-white p-6 rounded-lg text-right">
-                        <div class="flex items-center gap-4">
-                            <span class="material-icons text-4xl">tune</span>
-                            <div>
-                                <div class="font-bold text-lg">سفارشی سازی کامل</div>
-                                <div class="text-sm opacity-90">ساخت پرامپت با جزئیات دلخواه</div>
-                            </div>
+                    </div>
+                </button>
+                <button id="customChoice" class="w-full material-btn bg-pink-600 text-white p-6 rounded-lg text-right">
+                    <div class="flex items-center gap-4">
+                        <span class="material-icons text-4xl">tune</span>
+                        <div>
+                            <div class="font-bold text-lg">سفارشی سازی کامل</div>
+                            <div class="text-sm opacity-90">ساخت پرامپت با جزئیات دلخواه</div>
                         </div>
-                    </button>
-                </div>
+                    </div>
+                </button>
             </div>
         </div>
         
@@ -189,7 +187,7 @@
     </div>
 
     <!-- Bottom Navigation -->
-    <div class="fixed bottom-0 left-0 right-0 bg-white shadow-lg z-40">
+    <div id="bottomNav" class="fixed bottom-0 left-0 right-0 bg-white shadow-lg z-40 hidden">
         <div class="max-w-md mx-auto p-3">
             <button id="nextBtn" class="w-full material-btn bg-rose-600 text-white py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2">
                 <span>بعدی</span>

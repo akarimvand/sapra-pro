@@ -145,7 +145,7 @@ function renderPage(pageIndex) {
       html += `
         <div>
           <label class="block text-gray-700 text-sm font-medium mb-2">${field.label}</label>
-          <textarea id="${field.id}" rows="4" class="w-full bg-white text-gray-900 p-3 rounded-lg border border-gray-300 focus:border-rose-500 outline-none transition-all text-sm" placeholder="مثال: یک پروانه روی شانه...">${selections[field.id] || ''}</textarea>
+          <textarea id="${field.id}" rows="3" class="w-full bg-white text-gray-900 p-3 rounded-lg border border-gray-300 focus:border-rose-500 outline-none transition-all text-sm" placeholder="مثال: یک پروانه روی شانه...">${selections[field.id] || ''}</textarea>
         </div>
       `;
     } else if (field.type === 'dropdown') {
@@ -285,6 +285,7 @@ document.getElementById('backBtn')?.addEventListener('click', () => {
   else if ((isPresetMode && currentPage === 0) || (!isPresetMode && currentPage === 1)) {
     document.getElementById('mainContent').classList.add('hidden');
     document.getElementById('choicePage').classList.remove('hidden');
+    document.getElementById('bottomNav').classList.add('hidden');
     document.getElementById('backBtn').style.display = 'none';
   }
   // Otherwise go to previous page
@@ -322,7 +323,7 @@ document.getElementById('restartBtn')?.addEventListener('click', () => {
   document.getElementById('resultPage').classList.add('hidden');
   document.getElementById('mainContent').classList.add('hidden');
   document.getElementById('choicePage').classList.remove('hidden');
-  document.getElementById('nextBtn').style.display = 'block';
+  document.getElementById('bottomNav').classList.add('hidden');
   document.getElementById('backBtn').style.display = 'none';
 });
 
@@ -467,6 +468,7 @@ document.getElementById('presetChoice')?.addEventListener('click', () => {
   isPresetMode = true;
   document.getElementById('choicePage').classList.add('hidden');
   document.getElementById('mainContent').classList.remove('hidden');
+  document.getElementById('bottomNav').classList.remove('hidden');
   document.getElementById('backBtn').style.display = 'block';
   showPage(0);
 });
@@ -475,6 +477,7 @@ document.getElementById('customChoice')?.addEventListener('click', () => {
   isPresetMode = false;
   document.getElementById('choicePage').classList.add('hidden');
   document.getElementById('mainContent').classList.remove('hidden');
+  document.getElementById('bottomNav').classList.remove('hidden');
   document.getElementById('backBtn').style.display = 'block';
   showPage(1);
 });
