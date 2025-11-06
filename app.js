@@ -3,6 +3,10 @@ let allData = {};
 let isDarkMode = false;
 let currentPage = 0;
 let isPresetMode = false;
+let isEditMode = false;
+let originalPrompt = '';
+let translatedPrompt = '';
+let isTranslated = false;
 
 const pages = [
   {
@@ -10,7 +14,8 @@ const pages = [
     desc: 'شروع سریع با سبک از پیش تعریف شده',
     icon: 'bolt',
     fields: [
-      { id: 'presets', label: 'پرامپت آماده', file: 'presets.json', type: 'dropdown' }
+      { id: 'presetCategory', label: 'دسته بندی', file: 'presets.json', type: 'category' },
+      { id: 'presets', label: 'پرامپت آماده', type: 'preset' }
     ]
   },
   {
@@ -79,15 +84,24 @@ async function loadAllData() {
     for (const page of pages) {
       for (const field of page.fields) {
         if (field.file) {
-          const response = await fetch(`./data/${field.file}`);
+          const response = await fetch(`./data/${field.file}?t=${Date.now()}`);
           if (response.ok) {
-            allData[field.id] = await response.json();
+            if (field.file === 'presets.json') {
+              allData.presets = await response.json();
+            } else {
+              allData[field.id] = await response.json();
+            }
           } else {
             console.error(`Failed to load ${field.file}`);
           }
         }
       }
     }
+    // Set default category
+    if (!selections.presetCategory && allData.presets?.categories?.length > 0) {
+      selections.presetCategory = allData.presets.categories[0].id;
+    }
+    console.log('Loaded presets:', allData.presets);
   } catch (error) {
     console.error('Error loading data:', error);
   }
@@ -148,6 +162,28 @@ function renderPage(pageIndex) {
           <textarea id="${field.id}" rows="3" class="w-full bg-white text-gray-900 p-3 rounded-lg border border-gray-300 focus:border-rose-500 outline-none transition-all text-sm" placeholder="مثال: یک پروانه روی شانه...">${selections[field.id] || ''}</textarea>
         </div>
       `;
+    } else if (field.type === 'category') {
+      const categories = allData.presets?.categories || [];
+      html += `
+        <div>
+          <label class="block text-gray-700 text-sm font-medium mb-2">${field.label}</label>
+          <select id="${field.id}" class="w-full bg-white text-gray-900 p-3 rounded-lg border border-gray-300 focus:border-rose-500 outline-none transition-all cursor-pointer text-sm">
+            ${categories.map(cat => `<option value="${cat.id}" ${selections[field.id] === cat.id ? 'selected' : ''}>${cat.name}</option>`).join('')}
+          </select>
+        </div>
+      `;
+    } else if (field.type === 'preset') {
+      const selectedCategory = selections.presetCategory || 'none';
+      const category = allData.presets?.categories?.find(cat => cat.id === selectedCategory);
+      const presets = category?.presets || [];
+      html += `
+        <div>
+          <label class="block text-gray-700 text-sm font-medium mb-2">${field.label}</label>
+          <select id="${field.id}" class="w-full bg-white text-gray-900 p-3 rounded-lg border border-gray-300 focus:border-rose-500 outline-none transition-all cursor-pointer text-sm">
+            ${presets.map(preset => `<option value="${preset.value}" ${selections[field.id] === preset.value ? 'selected' : ''}>${preset.label}</option>`).join('')}
+          </select>
+        </div>
+      `;
     } else if (field.type === 'dropdown') {
       const options = filterByGenderAge(allData[field.id] || [], field.id);
       const defaultLabel = getDefaultLabel(field.id, options);
@@ -171,7 +207,16 @@ function renderPage(pageIndex) {
   
   // Attach event listeners
   page.fields.forEach(field => {
-    if (field.type === 'dropdown' && field.id === 'clothing') {
+    if (field.type === 'category') {
+      document.getElementById(field.id)?.addEventListener('change', (e) => {
+        selections[field.id] = e.target.value;
+        renderPage(pageIndex); // Re-render to update presets
+      });
+    } else if (field.type === 'preset') {
+      document.getElementById(field.id)?.addEventListener('change', (e) => {
+        selections[field.id] = e.target.value;
+      });
+    } else if (field.type === 'dropdown' && field.id === 'clothing') {
       const select = document.getElementById(field.id);
       select?.addEventListener('change', (e) => {
         const selectedOption = e.target.options[e.target.selectedIndex];
@@ -231,7 +276,16 @@ function showPage(index) {
 }
 
 function buildPrompt() {
-  let parts = ['Transform the attached image into a professional portrait while preserving the subject\'s identity and facial features with absolute accuracy.', 'Enhance image quality, remove imperfections, and apply the following specifications:'];
+  let parts = [];
+  
+  if (isEditMode) {
+    parts.push('Transform the attached image into a professional portrait while preserving the subject\'s identity and facial features with absolute accuracy.');
+    parts.push('Enhance image quality, remove imperfections, and apply the following specifications:');
+  } else {
+    parts.push('Create a professional portrait with the following specifications:');
+  }
+  
+  parts.push('Face must be facing directly forward, front-facing view only, no side profile or angled faces.');
   
   Object.keys(selections).forEach(key => {
     if (selections[key] && key !== 'customText') parts.push(selections[key]);
@@ -243,10 +297,29 @@ function buildPrompt() {
   return parts.filter(Boolean).join(' ');
 }
 
+async function translateText(text) {
+  try {
+    const chunks = text.match(/.{1,400}/g) || [text];
+    let translatedChunks = [];
+    
+    for (const chunk of chunks) {
+      const response = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(chunk)}&langpair=en|fa`);
+      const data = await response.json();
+      translatedChunks.push(data.responseData.translatedText);
+    }
+    
+    return translatedChunks.join(' ');
+  } catch (error) {
+    console.error('Translation error:', error);
+    return text;
+  }
+}
+
 function showResult() {
   document.getElementById('mainContent').classList.add('hidden');
   document.getElementById('resultPage').classList.remove('hidden');
   const prompt = buildPrompt();
+  originalPrompt = prompt;
   document.getElementById('finalPrompt').value = prompt;
   
   // Show Persian translation if it's a preset prompt
@@ -268,7 +341,7 @@ document.getElementById('nextBtn')?.addEventListener('click', () => {
   if (currentPage === pages.length - 1) {
     showResult();
   } else {
-    if (isPresetMode && currentPage === 0 && selections.presets && selections.presets !== '') {
+    if (isPresetMode && currentPage === 0) {
       showPage(pages.length - 1);
     } else {
       showPage(currentPage + 1);
@@ -277,19 +350,17 @@ document.getElementById('nextBtn')?.addEventListener('click', () => {
 });
 
 document.getElementById('backBtn')?.addEventListener('click', () => {
-  // If in preset mode and on last page, go back to preset page
   if (isPresetMode && currentPage === pages.length - 1) {
     showPage(0);
-  }
-  // If on first page of each mode, go back to choice page
-  else if ((isPresetMode && currentPage === 0) || (!isPresetMode && currentPage === 1)) {
+  } else if (isPresetMode && currentPage === 0) {
     document.getElementById('mainContent').classList.add('hidden');
-    document.getElementById('choicePage').classList.remove('hidden');
+    document.getElementById('methodChoicePage').classList.remove('hidden');
     document.getElementById('bottomNav').classList.add('hidden');
-    document.getElementById('backBtn').style.display = 'none';
-  }
-  // Otherwise go to previous page
-  else {
+  } else if (!isPresetMode && currentPage === 1) {
+    document.getElementById('mainContent').classList.add('hidden');
+    document.getElementById('methodChoicePage').classList.remove('hidden');
+    document.getElementById('bottomNav').classList.add('hidden');
+  } else {
     showPage(currentPage - 1);
   }
 });
@@ -311,15 +382,50 @@ document.getElementById('shareBtn')?.addEventListener('click', async () => {
 document.getElementById('editBtn')?.addEventListener('click', () => {
   document.getElementById('resultPage').classList.add('hidden');
   document.getElementById('mainContent').classList.remove('hidden');
-  document.getElementById('nextBtn').style.display = 'block';
+  document.getElementById('bottomNav').classList.remove('hidden');
   document.getElementById('backBtn').style.display = 'block';
   showPage(pages.length - 1);
+});
+
+document.getElementById('translateBtn')?.addEventListener('click', async () => {
+  const promptTextarea = document.getElementById('finalPrompt');
+  const translateBtn = document.getElementById('translateBtn');
+  
+  if (!isTranslated) {
+    // Translate to Persian
+    translateBtn.innerHTML = '<span class="material-icons text-xs mr-1">hourglass_empty</span>در حال...';
+    translateBtn.disabled = true;
+    translatedPrompt = await translateText(originalPrompt);
+    promptTextarea.value = translatedPrompt;
+    translateBtn.innerHTML = '<span class="material-icons text-xs mr-1">translate</span>EN';
+    translateBtn.classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-rose-100', 'hover:text-rose-700');
+    translateBtn.classList.add('bg-rose-600', 'text-white', 'hover:bg-rose-700');
+    translateBtn.disabled = false;
+    isTranslated = true;
+  } else {
+    // Show original English
+    promptTextarea.value = originalPrompt;
+    translateBtn.innerHTML = '<span class="material-icons text-xs mr-1">translate</span>فا';
+    translateBtn.classList.remove('bg-rose-600', 'text-white', 'hover:bg-rose-700');
+    translateBtn.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-rose-100', 'hover:text-rose-700');
+    isTranslated = false;
+  }
 });
 
 document.getElementById('restartBtn')?.addEventListener('click', () => {
   selections = {};
   currentPage = 0;
   isPresetMode = false;
+  isEditMode = false;
+  originalPrompt = '';
+  translatedPrompt = '';
+  isTranslated = false;
+  const translateBtn = document.getElementById('translateBtn');
+  if (translateBtn) {
+    translateBtn.innerHTML = '<span class="material-icons text-xs mr-1">translate</span>فا';
+    translateBtn.classList.remove('bg-rose-600', 'text-white', 'hover:bg-rose-700');
+    translateBtn.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-rose-100', 'hover:text-rose-700');
+  }
   document.getElementById('resultPage').classList.add('hidden');
   document.getElementById('mainContent').classList.add('hidden');
   document.getElementById('choicePage').classList.remove('hidden');
@@ -464,7 +570,8 @@ document.getElementById('downloadImageBtn')?.addEventListener('click', () => {
   });
 });
 
-document.getElementById('presetChoice')?.addEventListener('click', () => {
+document.getElementById('editImageChoice')?.addEventListener('click', () => {
+  isEditMode = true;
   isPresetMode = true;
   document.getElementById('choicePage').classList.add('hidden');
   document.getElementById('mainContent').classList.remove('hidden');
@@ -473,12 +580,26 @@ document.getElementById('presetChoice')?.addEventListener('click', () => {
   showPage(0);
 });
 
-document.getElementById('customChoice')?.addEventListener('click', () => {
-  isPresetMode = false;
+document.getElementById('createImageChoice')?.addEventListener('click', () => {
+  isEditMode = false;
   document.getElementById('choicePage').classList.add('hidden');
+  document.getElementById('methodChoicePage').classList.remove('hidden');
+  document.getElementById('backBtn').style.display = 'block';
+});
+
+document.getElementById('presetChoice')?.addEventListener('click', () => {
+  isPresetMode = true;
+  document.getElementById('methodChoicePage').classList.add('hidden');
   document.getElementById('mainContent').classList.remove('hidden');
   document.getElementById('bottomNav').classList.remove('hidden');
-  document.getElementById('backBtn').style.display = 'block';
+  showPage(0);
+});
+
+document.getElementById('customChoice')?.addEventListener('click', () => {
+  isPresetMode = false;
+  document.getElementById('methodChoicePage').classList.add('hidden');
+  document.getElementById('mainContent').classList.remove('hidden');
+  document.getElementById('bottomNav').classList.remove('hidden');
   showPage(1);
 });
 

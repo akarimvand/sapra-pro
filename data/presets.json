@@ -1,28 +1,125 @@
-
-[
-  { "value": "", "label": "بدون پرامپت آماده" },
-  { "value": "Classic studio portrait with soft lighting and neutral background, professional retouching, sharp focus, smooth skin, detailed textures, natural color correction, DSLR quality, timeless aesthetic.", "label": "پرتره استودیویی کلاسیک با نورپردازی نرم و پس‌زمینه خنثی" },
-  { "value": "Outdoor portrait with natural light and shallow depth of field, vibrant colors, clear focus on subject, detailed environment blur, realistic skin tones, cinematic feel, professional outdoor photography.", "label": "پرتره در فضای باز با نور طبیعی و عمق میدان کم" },
-  { "value": "Dramatic portrait with high contrast and deep shadows, intense mood, strong facial expressions, artistic lighting, detailed textures, powerful aesthetic, professional black and white conversion.", "label": "پرتره دراماتیک با کنتراست بالا و سایه‌های عمیق" },
-  { "value": "Artistic black and white portrait with precise textures and details, strong composition, emotional depth, fine film grain, classic monochrome look, professional studio setup, timeless art piece.", "label": "پرتره هنری سیاه و سفید با بافت‌ و جزئیات دقیق" },
-  { "value": "Fashion portrait with modern styling and pop colors, bold lighting, dynamic pose, sleek background, vibrant aesthetic, high-end editorial look, professional fashion photography.", "label": "پرتره فشن با استایلینگ مدرن و رنگ‌های پاپ" },
-  { "value": "Cool urban photo of an individual in streetwear standing near neon lights, night city vibe, cinematic shadows, detailed clothing texture, sharp focus, DSLR quality, confident pose, soft reflections, high contrast lighting, professional editorial look, stylish and moody aesthetic.", "label": "استایل خیابانی شهری از فردی با لباس خیابانی (نور نئون و شب)"},
-  { "value": "Elegant portrait of an individual wearing a suit and tie, neutral studio background, soft lighting, cinematic tone, sharp detail, clean focus, smooth skin texture, DSLR photo realism, sophisticated professional look, timeless classic portrait aesthetic.", "label": "پرتره باوقار کلاسیک از فردی با کت و شلوار و کراوات"},
-  { "value": "Muscular individual working out in a gym, sweat details, focused expression, cinematic lighting, high contrast shadows, strong body definition, realistic skin tone, ultra-HD quality, dynamic pose, powerful and motivational atmosphere, professional sports photography style.", "label": "عکس ورزشی و باشگاه از فردی عضلانی (با تمرکز)"},
-  { "value": "Adventurous individual standing on a mountain top, windy atmosphere, golden sunlight, detailed landscape, sharp focus, cinematic tones, high-resolution outdoor photography, realistic skin tones, rugged aesthetic, travel adventure photo style.", "label": "حس ماجراجویی در طبیعت از فردی (کوهستان و غروب)"},
-  { "value": "Monochrome portrait of an individual looking sideways, dramatic lighting, deep contrast, fine detail on facial features, artistic film grain, emotional tone, professional black and white photography, timeless and cinematic aesthetic.", "label": "درام سیاه و سفید از فردی (نگاه از نیمرخ)"},
-  { "value": "Casual individual walking by the beach at sunset, shirt slightly open, warm golden lighting, cinematic reflections on water, calm vibe, high-quality DSLR detail, natural tones, lifestyle fashion photography style, relaxed and confident pose.", "label": "سبک زندگی ساحلی از فردی با استایل کژوال (غروب آفتاب و آرامش)"},
-  { "value": "Professional individual walking in a modern city street wearing formal attire, sharp focus, reflections on buildings, cinematic urban tones, DSLR photo quality, confident expression, soft light shadows, elegant corporate photography style.", "label": "ادیت کسب و کار شهری از فردی با لباس رسمی در خیابان"},
-  { "value": "Individual wearing a winter coat and scarf in a snowy city street, moody tones, soft cold lighting, visible breath, cinematic contrast, ultra-HD detail, editorial photography style, stylish winter fashion vibe.", "label": "حال و هوای خیابان برفی از فردی (لباس زمستانی)"},
-  { "value": "Creative portrait of an individual holding a mirror outdoors, dreamy lighting, reflection showing sky and clouds, artistic composition, cinematic tones, 4K clarity, deep emotional atmosphere, minimal aesthetic portrait photography style.", "label": "بازتاب آینه‌ای هنری از فردی (فضای باز و رویایی)"},
-  { "value": "Vintage-style photo of an individual sitting beside a classic car, soft faded tones, nostalgic lighting, film grain texture, retro outfit, cinematic composition, warm sepia palette, authentic old-school aesthetic, high-quality DSLR realism.", "label": "ادیت وینتیج و رترو از فردی (ماشین کلاسیک)"},
-  { "value": "Candid shot of an individual sitting in a coffee shop with sunlight streaming through the window, warm tones, cinematic shadows, detailed background blur, natural expression, lifestyle photography aesthetic, ultra-HD DSLR quality.", "label": "حس کافه از فردی (نور خورشید و طبیعی)"},
-  { "value": "Dynamic photo of an individual running through a city street, motion blur, detailed muscles, focused expression, cinematic morning light, realistic tones, high shutter-speed DSLR look, energy and strength-focused action shot aesthetic.", "label": "اکشن ورزشی در خیابان از فردی (تاری حرکتی و انرژی)"},
-  { "value": "Portrait of an individual with dramatic shadows on their face, golden hour lighting, artistic photography, fine facial detail, cinematic tone, ultra-HD realism, expressive emotional vibe, moody portrait aesthetic.", "label": "پرتره سایه‌های دراماتیک از فردی (نور طلایی)"},
-  { "value": "Stylish individual standing on a rooftop during sunset, glowing city background, cinematic lighting, confident pose, soft golden tones, professional DSLR quality, urban skyline aesthetic, modern vibe.", "label": "ادیت ساعت طلایی پشت بام از فردی (منظره شهر)"},
-  { "value": "Studio portrait of an individual in black turtleneck, plain background, soft diffused lighting, clean contrast, detailed texture, DSLR focus, professional fashion editorial look, high-end minimal aesthetic in 4K quality.", "label": "شات فشن استودیویی مینیمال از فردی (یقه اسکی مشکی)"},
-  { "value": "Portrait of an individual in traditional Persian attire, intricate patterns, vibrant colors, set against a backdrop of ancient Persian architecture, soft, warm lighting, emphasizing cultural richness and historical elegance.", "label": "پرتره با لباس سنتی ایرانی در معماری کهن" },
-  { "value": "Modern Iranian portrait, showcasing an individual with contemporary fashion blended with subtle traditional elements, in an urban Tehran backdrop, dramatic evening lighting, conveying a sophisticated and artistic aesthetic.", "label": "پرتره مدرن ایرانی با استایل معاصر و نمادهای سنتی در تهران" },
-  { "value": "A thoughtful portrait of an individual in a traditional Iranian house, with intricate tilework and natural light filtering through stained-glass windows, creating a serene and culturally rich atmosphere.", "label": "پرتره متفکرانه در خانه سنتی ایرانی با نور رنگی" }
-]
-    
+{
+  "categories": [
+    {
+      "id": "none",
+      "name": "بدون پرامپت آماده",
+      "presets": [
+        { "value": "", "label": "بدون پرامپت آماده - شروع از صفر" }
+      ]
+    },
+    {
+      "id": "professional",
+      "name": "🎯 رزومه و حرفهای",
+      "presets": [
+        { "value": "Professional headshot, 35mm, F/2.8, insanely detailed and intricate, character, hypermaximalist, elegant, ornate, hyper-realistic, super detailed, business attire, studio lighting", "label": "عکس رسمی حرفهای - مناسب رزومه و لینکدین با نورپردازی استودیویی و لباس رسمی" },
+        { "value": "close-up portrait, businessman, natural light, sharp, detailed face, magazine, press, photograph, canon, nikon, focus, formal suit", "label": "پرتره تجاری نزدیک - عکس مجلهای با نور طبیعی و کت و شلوار رسمی برای مدیران" },
+        { "value": "Portrait of executive in formal attire, detailed face, office background, professional lighting, highly detailed, 8k, close-up, corporate setting", "label": "مدیر اجرایی - پرتره در محیط اداری با پسزمینه دفتر کار و نورپردازی حرفهای" },
+        { "value": "Professional woman portrait, business suit, studio photography, sharp focus, elegance, detailed face, award-winning photography, masterpiece, rim lighting", "label": "زن کسبوکار حرفهای - عکس استودیویی با کت و دامن رسمی و نورپردازی برنده جایزه" },
+        { "value": "Corporate headshot, formal business attire, neutral background, professional lighting, detailed facial features, high resolution, 8k quality", "label": "عکس شرکتی استاندارد - هدشات با پسزمینه خنثی و لباس رسمی کسبوکار با کیفیت 8K" },
+        { "value": "Executive portrait, man in tuxedo, office environment, professional appearance, detailed face, elegant composition, sophisticated lighting", "label": "مدیر ارشد مردانه - پرتره با لباس اسموکینگ در محیط اداری لوکس با نورپردازی پیچیده" },
+        { "value": "Medical professional portrait, white coat, clinical setting, trustworthy appearance, natural lighting, detailed face, professional quality", "label": "پرتره پزشکی - دکتر با روپوش سفید در محیط کلینیکی با ظاهر قابل اعتماد" },
+        { "value": "Legal professional headshot, formal suit, law office background, authoritative presence, sharp lighting, detailed facial features", "label": "وکیل حرفهای - عکس رسمی با کت و شلوار در دفتر وکالت با حضور مقتدرانه" }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "📸 پروفایل اجتماعی و لایفاستایل",
+      "presets": [
+        { "value": "Casual portrait, outdoor setting, natural lighting, 35mm, F/2.8, 4k, photojournalism, detailed face, lifestyle photography", "label": "پرتره غیررسمی - عکس بیرون با نور طبیعی و لباس راحتی مناسب شبکههای اجتماعی" },
+        { "value": "Urban portrait, city background, street style, incredibly detailed, detailed face, 35mm, F/2.8, 4k, modern aesthetic", "label": "عکس شهری مدرن - پرتره در شهر با پسزمینه ساختمانها و استایل خیابانی معاصر" },
+        { "value": "Nature portrait, outdoor environment, golden hour lighting, detailed face, peaceful setting, natural composition, high resolution", "label": "پرتره طبیعی - عکس در فضای باز با نور طلایی غروب و محیط آرام طبیعت" },
+        { "value": "Home portrait, indoor setting, soft lighting, comfortable atmosphere, detailed facial features, personal space, warm tones", "label": "عکس خانگی آرام - پرتره در خانه با نور ملایم و فضای گرم و صمیمی" },
+        { "value": "Travel portrait, destination background, adventure setting, natural lighting, detailed face, wanderlust aesthetic, outdoor photography", "label": "پرتره سفر - عکس در مقصد گردشگری با پسزمینه ماجراجویانه و حس سفر" },
+        { "value": "Fitness portrait, athletic setting, active lifestyle, dynamic composition, detailed face, energetic atmosphere, sports photography", "label": "عکس ورزشی - پرتره در باشگاه یا محیط ورزشی با ترکیب پویا و انرژی بالا" },
+        { "value": "Creative portrait, artistic background, unique styling, expressive composition, detailed face, mood lighting, contemporary style", "label": "پرتره خلاقانه - عکس هنری با پسزمینه منحصربهفرد و نورپردازی احساسی مدرن" },
+        { "value": "Social media portrait, trendy background, fashionable styling, Instagram-ready, perfect lighting, detailed face, modern aesthetic", "label": "عکس شبکه اجتماعی - پرتره آماده اینستاگرام با استایل مد روز و نورپردازی کامل" }
+      ]
+    },
+    {
+      "id": "artistic",
+      "name": "🎨 سبکهای هنری و دیجیتال",
+      "presets": [
+        { "value": "Black and white portrait, dramatic lighting, high contrast, artistic composition, monochrome aesthetic, detailed face, award-winning photography", "label": "سیاه و سفید دراماتیک - پرتره تکرنگ با نورپردازی دراماتیک و کنتراست بالا برنده جایزه" },
+        { "value": "Fine art portrait, by alyssa monks, highly detailed, elegant, masterpiece, trending on artstation, detailed facial features, artistic render", "label": "پرتره هنری فاین آرت - اثر هنری با جزئیات بالا به سبک نقاشان معروف و ترند آرتاستیشن" },
+        { "value": "Vintage portrait, sepia tones, film grain effect, nostalgic atmosphere, detailed face, classic composition, retro styling", "label": "پرتره وینتیج - عکس قدیمی با تون سپیا و افکت فیلم و حس نوستالژیک کلاسیک" },
+        { "value": "Cinematic portrait, anamorphic lens flare, shallow depth of field, volumetric lighting, detailed face, movie-style lighting, 8k quality", "label": "پرتره سینمایی - عکس به سبک فیلم با لنز آنامورفیک و نورپردازی سینمایی حرفهای" },
+        { "value": "Minimalist portrait, clean composition, simple background, elegant styling, detailed face, refined aesthetic, modern art", "label": "پرتره مینیمال - ترکیب ساده و تمیز با پسزمینه خالی و زیباییشناسی مدرن مینیمالیستی" },
+        { "value": "Abstract portrait, artistic interpretation, creative elements, unique perspective, detailed face, experimental style, contemporary art", "label": "پرتره انتزاعی - تفسیر هنری خلاقانه با عناصر تجربی و دیدگاه منحصربهفرد معاصر" },
+        { "value": "Digital art portrait, enhanced colors, stylized features, futuristic aesthetic, detailed face, digital effects, modern technology", "label": "آرت دیجیتال - پرتره دیجیتال با رنگهای تقویتشده و افکتهای فناوری پیشرفته آیندهنگر" },
+        { "value": "Hyperrealistic portrait, insanely detailed, character study, elegant, ornate, super detailed, popular on Flickr, detailed facial features", "label": "فوق واقعگرا - پرتره با جزئیات دیوانهکننده و واقعگرایی افسانهای محبوب فلیکر" }
+      ]
+    },
+    {
+      "id": "gaming",
+      "name": "🎮 سبک بازیها",
+      "presets": [
+        { "value": "GTA 5 loading screen style portrait, dramatic lighting, urban background, character artwork, Rockstar Games aesthetic, detailed face, cinematic composition, video game art", "label": "سبک GTA 5 - پرتره به سبک صفحه لودینگ جیتیای با نورپردازی دراماتیک و پسزمینه شهری" },
+        { "value": "Cyberpunk 2077 style portrait, neon lights, futuristic cityscape, cybernetic enhancements, dystopian atmosphere, detailed face, night city aesthetic, sci-fi character art", "label": "سبک Cyberpunk 2077 - پرتره سایبرپانک با نورهای نئون و شهر آیندهنگر و فضای دیستوپیایی" },
+        { "value": "Minecraft style portrait, pixelated art, blocky aesthetic, voxel art, 8-bit style, cubic design, retro gaming look, detailed pixel face", "label": "سبک Minecraft - پرتره پیکسلی با طراحی مکعبی و هنر وکسل به سبک ماینکرافت" },
+        { "value": "Fortnite style portrait, cartoon aesthetic, vibrant colors, cel-shaded art, battle royale character, detailed face, Epic Games style, animated look", "label": "سبک Fortnite - پرتره کارتونی با رنگهای پرجنبوجوش و سبک انیمیشنی فورتنایت" },
+        { "value": "The Last of Us style portrait, post-apocalyptic setting, realistic rendering, survival theme, gritty atmosphere, detailed face, Naughty Dog aesthetic", "label": "سبک The Last of Us - پرتره پساآخرالزمانی با رندر واقعگرا و فضای خشن بقا" },
+        { "value": "Valorant style portrait, stylized character art, tactical shooter aesthetic, clean lines, bold colors, detailed face, Riot Games style", "label": "سبک Valorant - پرتره استایلیزه با خطوط تمیز و رنگهای پررنگ به سبک والورانت" },
+        { "value": "Red Dead Redemption style portrait, western theme, oil painting aesthetic, frontier setting, detailed face, Rockstar artistic style, vintage look", "label": "سبک Red Dead Redemption - پرتره وسترن با زیباییشناسی نقاشی رنگ روغن و تم غرب وحشی" },
+        { "value": "League of Legends splash art style portrait, fantasy character, dramatic pose, magical effects, detailed face, Riot Games artwork, epic composition", "label": "سبک League of Legends - پرتره فانتزی با پوز دراماتیک و افکتهای جادویی اسپلش آرت" }
+      ]
+    },
+    {
+      "id": "effects",
+      "name": "✨ افکتها و فیلترها",
+      "presets": [
+        { "value": "Anime style portrait, manga aesthetic, large expressive eyes, cel-shaded coloring, Japanese animation style, detailed face, vibrant colors", "label": "افکت انیمه - تبدیل به سبک انیمیشن ژاپنی با چشمان بزرگ و رنگآمیزی سل شید" },
+        { "value": "Oil painting effect portrait, classical art style, brush strokes visible, Renaissance aesthetic, painted texture, detailed face, artistic rendering", "label": "افکت نقاشی رنگ روغن - تبدیل به نقاشی کلاسیک با قلمزدنهای واضح و بافت رنگ" },
+        { "value": "Watercolor effect portrait, soft edges, flowing colors, artistic wash, delicate texture, detailed face, painted aesthetic, dreamy atmosphere", "label": "افکت آبرنگ - تبدیل به نقاشی آبرنگ با لبههای نرم و رنگهای روان و فضای رویایی" },
+        { "value": "Comic book style portrait, bold outlines, halftone dots, pop art aesthetic, graphic novel look, detailed face, vibrant colors, Ben-Day dots", "label": "افکت کمیک بوک - تبدیل به کمیک با خطوط پررنگ و نقطههای هافتون و سبک پاپ آرت" },
+        { "value": "Pencil sketch effect portrait, hand-drawn look, graphite texture, artistic lines, shading details, detailed face, black and white sketch", "label": "افکت طراحی مداد - تبدیل به طراحی دستی با بافت گرافیت و سایهزنی هنری" },
+        { "value": "Neon glow effect portrait, glowing edges, vibrant neon colors, cyberpunk aesthetic, luminous outline, detailed face, electric atmosphere", "label": "افکت نئون درخشان - اضافه کردن لبههای درخشان نئونی با رنگهای فسفری و فضای الکتریکی" },
+        { "value": "Double exposure effect portrait, layered images, artistic blend, surreal composition, transparent overlay, detailed face, creative merge", "label": "افکت دابل اکسپوژر - ترکیب لایههای تصویری با ترکیب هنری و اورلی شفاف سورئال" },
+        { "value": "Glitch art effect portrait, digital distortion, RGB shift, corrupted data aesthetic, cyberpunk glitch, detailed face, technological error look", "label": "افکت گلیچ آرت - اعمال اختلال دیجیتال با شیفت RGB و زیباییشناسی خطای تکنولوژیکی" },
+        { "value": "Studio Ghibli style portrait, Hayao Miyazaki aesthetic, soft watercolor look, whimsical atmosphere, hand-drawn animation style, detailed face, Japanese anime art", "label": "افکت استودیو گیبلی - تبدیل به سبک انیمیشن میازاکی با آبرنگ نرم و فضای رویایی" },
+        { "value": "Van Gogh painting style portrait, post-impressionist aesthetic, swirling brush strokes, vibrant colors, Starry Night technique, detailed face, expressive texture", "label": "افکت ون گوگ - تبدیل به نقاشی پست امپرسیونیست با قلمزدنهای گردابی و رنگهای پرجنبوجوش" },
+        { "value": "Rembrandt painting style portrait, Dutch Golden Age aesthetic, dramatic chiaroscuro lighting, rich dark tones, classical oil painting, detailed face, masterful shadows", "label": "افکت رامبراند - تبدیل به نقاشی کلاسیک با نورپردازی کیاروسکورو و سایههای استادانه" },
+        { "value": "Leonardo da Vinci style portrait, Renaissance art aesthetic, sfumato technique, classical composition, detailed face, Mona Lisa quality, Italian master style", "label": "افکت لئوناردو داوینچی - تبدیل به نقاشی رنسانس با تکنیک اسفوماتو و کیفیت مونالیزا" },
+        { "value": "Pixar animation style portrait, 3D rendered character, smooth shading, expressive features, detailed face, Disney Pixar aesthetic, family-friendly look", "label": "افکت پیکسار - تبدیل به کاراکتر انیمیشن سهبعدی با سایهزنی نرم و ویژگیهای بیانگر" }
+      ]
+    },
+    {
+      "id": "celebrity",
+      "name": "🌟 سلفی با مشاهیر",
+      "presets": [
+        { "value": "Two people in selfie photo, main subject and Elon Musk standing together, casual setting, tech entrepreneur background, natural lighting, both faces detailed, modern smartphone photo, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با ایلان ماسک - عکس دو نفره با کارآفرین فناوری با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Cristiano Ronaldo standing together, sports setting, athletic background, stadium atmosphere, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با کریستیانو رونالدو - عکس با ستاره فوتبال با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Taylor Swift standing together, concert backstage, music industry setting, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با تیلور سویفت - عکس در پشت صحنه کنسرت با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Leonardo DiCaprio standing together, Hollywood setting, movie premiere atmosphere, red carpet background, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با لئوناردو دیکاپریو - عکس در محیط هالیوود با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Lionel Messi standing together, football field background, sports atmosphere, stadium setting, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با لیونل مسی - عکس با افسانه فوتبال با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Dwayne The Rock Johnson standing together, gym setting, fitness atmosphere, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با دواین جانسون (راک) - عکس در باشگاه با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Beyoncé standing together, concert stage, performance atmosphere, stage lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با بیانسه - عکس روی صحنه کنسرت با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Bill Gates standing together, tech conference setting, innovation atmosphere, professional background, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با بیل گیتس - عکس در کنفرانس فناوری با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Ariana Grande standing together, music studio, recording session atmosphere, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با آریانا گرانده - عکس در استودیو موسیقی با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Tom Cruise standing together, movie set, action film atmosphere, Hollywood background, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با تام کروز - عکس در صحنه فیلمبرداری با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Albert Einstein standing together, laboratory setting, scientific atmosphere, vintage background, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با آلبرت اینشتین - عکس در آزمایشگاه با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Thomas Edison standing together, invention workshop, historical setting, vintage laboratory, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با توماس ادیسون - عکس در کارگاه اختراع با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Michael Jackson standing together, concert stage, moonwalk performance, iconic setting, stage lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با مایکل جکسون - عکس روی صحنه کنسرت با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Elvis Presley standing together, recording studio, rock and roll atmosphere, vintage setting, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با الویس پریسلی - عکس در استودیو ضبط با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Marilyn Monroe standing together, Hollywood glamour, vintage movie set, classic atmosphere, studio lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با مریلین مونرو - عکس در محیط هالیوود با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Charlie Chaplin standing together, silent film set, vintage cinema, black and white atmosphere, classic lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با چارلی چاپلین - عکس در صحنه فیلم صامت با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Muhammad Ali standing together, boxing ring, championship atmosphere, sports arena, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با محمد علی کلی - عکس در رینگ بوکس با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Bruce Lee standing together, martial arts dojo, action atmosphere, training setting, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با بروس لی - عکس در دوجو رزمی با حفظ هویت چهره و بهبود کیفیت" },
+        { "value": "Two people in selfie photo, main subject and Steve Jobs standing together, Apple headquarters, tech innovation setting, modern office, natural lighting, detailed faces, preserve main subject identity and facial features, enhance quality, clean and sharp, maintain natural expression, no forced smile", "label": "سلفی با استیو جابز - عکس در مقر اپل با حفظ هویت چهره و بهبود کیفیت" }
+      ]
+    },
+    {
+      "id": "cultural",
+      "name": "🌍 سبکهای عمومی و فرهنگی",
+      "presets": [
+        { "value": "Traditional portrait, cultural attire, heritage background, authentic styling, respectful representation, detailed face, natural lighting", "label": "پرتره سنتی - عکس با لباس فرهنگی و پسزمینه میراثی با نمایش احترامآمیز و اصیل" },
+        { "value": "Ethnic portrait, traditional clothing, cultural setting, authentic appearance, heritage celebration, detailed facial features, natural environment", "label": "پرتره قومی - نمایش لباس سنتی قومی در محیط فرهنگی با جشن میراث اصیل" },
+        { "value": "Regional portrait, local costume, geographical background, cultural identity, traditional elements, detailed face, authentic representation", "label": "پرتره منطقهای - لباس محلی با پسزمینه جغرافیایی و هویت فرهنگی منطقه خاص" },
+        { "value": "Historical portrait, period clothing, vintage setting, classical styling, timeless composition, detailed facial features, museum quality", "label": "پرتره تاریخی - لباس دورهای با محیط قدیمی و ترکیب کلاسیک با کیفیت موزهای" },
+        { "value": "Cultural fusion portrait, mixed heritage styling, diverse elements, modern interpretation, detailed face, inclusive representation", "label": "ترکیب فرهنگی - استایل میراث مختلط با عناصر متنوع و تفسیر مدرن فراگیر" },
+        { "value": "International portrait, global styling, multicultural elements, worldly appearance, detailed face, diverse representation, professional quality", "label": "پرتره بینالمللی - استایل جهانی با عناصر چندفرهنگی و ظاهر متنوع حرفهای" },
+        { "value": "Contemporary cultural portrait, modern traditional wear, updated styling, current interpretation, detailed face, fresh perspective", "label": "فرهنگی معاصر - لباس سنتی مدرن با استایل بهروز و تفسیر امروزی با دیدگاه تازه" },
+        { "value": "Heritage portrait, ancestral styling, family tradition elements, generational representation, detailed facial features, cultural continuity", "label": "پرتره میراثی - استایل اجدادی با عناصر سنت خانوادگی و نمایش نسلی پیوسته فرهنگی" }
+      ]
+    }
+  ]
+}

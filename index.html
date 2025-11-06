@@ -73,7 +73,7 @@
     
     <!-- Progress Bar -->
     <div class="fixed top-0 left-0 right-0 h-1 bg-gray-200 z-50">
-        <div id="progress" class="h-full bg-blue-600 transition-all duration-500" style="width: 0%;"></div>
+        <div id="progress" class="h-full bg-rose-600 transition-all duration-500" style="width: 0%;"></div>
     </div>
 
     <!-- Header -->
@@ -107,22 +107,51 @@
                 <h2 class="text-xl font-bold text-gray-900 mb-1">چگونه میخواهید شروع کنید؟</h2>
                 <p class="text-gray-600 text-sm">یکی از گزینه ها را انتخاب کنید</p>
             </div>
-            <div class="space-y-3 w-full">
-                <button id="presetChoice" class="w-full material-btn bg-rose-500 text-white p-6 rounded-lg text-right">
-                    <div class="flex items-center gap-4">
-                        <span class="material-icons text-4xl">bolt</span>
+            <div class="space-y-2 w-full">
+                <button id="editImageChoice" class="w-full material-btn bg-rose-500 text-white p-4 rounded-lg text-right">
+                    <div class="flex items-center gap-3">
+                        <span class="material-icons text-3xl">edit</span>
                         <div>
-                            <div class="font-bold text-lg">پرامپت آماده</div>
-                            <div class="text-sm opacity-90">استفاده سریع از سبکهای از پیش آماده</div>
+                            <div class="font-bold text-base">ویرایش تصویر</div>
+                            <div class="text-xs opacity-90">بهبود و ویرایش تصویر موجود</div>
                         </div>
                     </div>
                 </button>
-                <button id="customChoice" class="w-full material-btn bg-pink-600 text-white p-6 rounded-lg text-right">
-                    <div class="flex items-center gap-4">
-                        <span class="material-icons text-4xl">tune</span>
+                <button id="createImageChoice" class="w-full material-btn bg-pink-600 text-white p-4 rounded-lg text-right">
+                    <div class="flex items-center gap-3">
+                        <span class="material-icons text-3xl">add_photo_alternate</span>
                         <div>
-                            <div class="font-bold text-lg">سفارشی سازی کامل</div>
-                            <div class="text-sm opacity-90">ساخت پرامپت با جزئیات دلخواه</div>
+                            <div class="font-bold text-base">ساخت تصویر جدید</div>
+                            <div class="text-xs opacity-90">تولید تصویر از صفر</div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Method Choice Page -->
+        <div id="methodChoicePage" class="hidden flex-1 flex flex-col items-center justify-center">
+            <div class="text-center mb-4">
+                <img src="logo.png" alt="لوگو" class="w-32 h-32 mx-auto mb-2 object-contain">
+                <h2 class="text-lg font-bold text-gray-900 mb-1">روش ساخت پرامپت</h2>
+                <p class="text-gray-600 text-sm">یکی از گزینه ها را انتخاب کنید</p>
+            </div>
+            <div class="space-y-2 w-full">
+                <button id="presetChoice" class="w-full material-btn bg-rose-500 text-white p-4 rounded-lg text-right">
+                    <div class="flex items-center gap-3">
+                        <span class="material-icons text-3xl">bolt</span>
+                        <div>
+                            <div class="font-bold text-base">پرامپت آماده</div>
+                            <div class="text-xs opacity-90">استفاده سریع از سبکهای آماده</div>
+                        </div>
+                    </div>
+                </button>
+                <button id="customChoice" class="w-full material-btn bg-pink-600 text-white p-4 rounded-lg text-right">
+                    <div class="flex items-center gap-3">
+                        <span class="material-icons text-3xl">tune</span>
+                        <div>
+                            <div class="font-bold text-base">سفارشی سازی کامل</div>
+                            <div class="text-xs opacity-90">ساخت پرامپت با جزئیات دلخواه</div>
                         </div>
                     </div>
                 </button>
@@ -152,10 +181,16 @@
                             <span class="material-icons text-sm">description</span>
                             پرامپت نهایی
                         </span>
-                        <button id="copyBtn" class="text-rose-600 text-xs font-medium flex items-center gap-1">
-                            <span class="material-icons text-sm">content_copy</span>
-                            کپی
-                        </button>
+                        <div class="flex items-center gap-2">
+                            <button id="translateBtn" class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium transition-all hover:bg-rose-100 hover:text-rose-700 border border-gray-300">
+                                <span class="material-icons text-xs mr-1">translate</span>
+                                فا
+                            </button>
+                            <button id="copyBtn" class="text-rose-600 text-xs font-medium flex items-center gap-1">
+                                <span class="material-icons text-sm">content_copy</span>
+                                کپی
+                            </button>
+                        </div>
                     </div>
                     <textarea id="finalPrompt" readonly class="w-full bg-white text-gray-900 p-3 rounded border border-gray-300 outline-none text-xs leading-relaxed font-bold" rows="10"></textarea>
                     <div id="persianTranslation" class="mt-2 p-3 bg-blue-50 rounded border border-blue-200 hidden">
