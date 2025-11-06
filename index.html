@@ -17,9 +17,8 @@
         .loader { width: 60px; height: 60px; border: 4px solid rgba(225,29,72,0.2); border-top: 4px solid #e11d48; border-radius: 50%; animation: spin 1s linear infinite; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         
-        .typing-text { font-size: 2rem; font-weight: 700; color: #e11d48; overflow: hidden; border-left: 3px solid #e11d48; white-space: nowrap; animation: typing 2s steps(15) 1s forwards, blink 1s infinite; width: 0; }
-        @keyframes typing { from { width: 0; } to { width: 100%; } }
-        @keyframes blink { 0%, 50% { border-color: #e11d48; } 51%, 100% { border-color: transparent; } }
+        .typing-text { font-size: 2rem; font-weight: 700; color: #e11d48; opacity: 0; animation: fadeInUp 1.5s ease-out 0.5s forwards; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         
         .fade-out { animation: fadeOut 0.5s forwards; }
         @keyframes fadeOut { to { opacity: 0; visibility: hidden; } }
