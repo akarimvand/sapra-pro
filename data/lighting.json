@@ -1,0 +1,22 @@
+
+[
+  { "value": "", "label": "پیش‌فرض (نورپردازی موجود در تصویر)" },
+  { "value": "with warm, golden light backlighting and casting a beautiful glow.", "label": "با نور گرم طلایی که از پشت می‌تابد و درخشش زیبایی ایجاد می‌کند." },
+  { "value": "soft golden-hour sunlight.", "label": "نور خورشید نرم ساعت طلایی" },
+  { "value": "dramatic cinematic shadows.", "label": "سایه‌های دراماتیک سینمایی" },
+  { "value": "bright daylight.", "label": "نور روز روشن" },
+  { "value": "neon nightlife glow.", "label": "درخشش نئون شبانه" },
+  { "value": "candlelight indoors.", "label": "نور شمع در فضای داخلی" },
+  { "value": "misty morning light.", "label": "نور مه‌آلود صبحگاهی" },
+  { "value": "moody chiaroscuro lighting.", "label": "نورپردازی کنتراست‌بالا (چیاروسکورو) و پر رمز و راز"},
+  { "value": "soft, diffused window light.", "label": "نور نرم و پخش‌شده از پنجره"},
+  { "value": "high-key, bright and airy.", "label": "نورپردازی روشن و با طراوت (های‌کی)"},
+  { "value": "dusk blue hour glow.", "label": "درخشش آبی ساعت گرگ و میش"},
+  { "value": "Rembrandt lighting with a distinct triangle of light on the cheek, emphasizing depth and drama.", "label": "نورپردازی رامبراند (با مثلث نوری روی گونه)" },
+  { "value": "underwater ethereal glow.", "label": "درخشش اثیری زیر آب" },
+  { "value": "stormy, overcast sky lighting.", "label": "نورپردازی آسمان طوفانی و ابری" },
+  { "value": "spotlight effect on the subject.", "label": "افکت نورافکن روی سوژه" },
+  { "value": "backlit silhouette against a vibrant sunset.", "label": "سیلوئت با نور پس‌زمینه در مقابل غروب پر جنب و جوش" },
+  { "value": "dreamy bokeh background lights.", "label": "نورهای پس‌زمینه بوکه رویایی" }
+]
+    

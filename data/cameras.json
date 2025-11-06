@@ -1,0 +1,14 @@
+
+[
+  { "value": "", "label": "پیش‌فرض (تنظیمات استودیویی حرفه‌ای)" },
+  { "value": "Shot on a Canon EOS 5D Mark IV with an 85mm f/1.4 lens, ISO 100, f/1.8 aperture.", "label": "عکاسی شده با Canon EOS 5D Mark IV و لنز 85mm f/1.4" },
+  { "value": "Shot on a Sony A7R IV with a 35mm f/1.4 lens, ISO 400, f/2.0 aperture.", "label": "عکاسی شده با Sony A7R IV و لنز 35mm f/1.4" },
+  { "value": "Shot on a Nikon Z9 with a 70–200mm f/2.8 lens, ISO 200, f/2.5 aperture.", "label": "عکاسی شده با Nikon Z9 و لنز 70-200mm f/2.8" },
+  { "value": "Shot on a Fujifilm X-T5 with a 56mm f/1.2 lens, ISO 800, f/1.4 aperture.", "label": "عکاسی شده با Fujifilm X-T5 و لنز 56mm f/1.2" },
+  { "value": "Shot on a Hasselblad X1D II 50C with an 80mm f/1.9 lens, ISO 160, f/2.2 aperture.", "label": "عکاسی شده با Hasselblad X1D II 50C و لنز 80mm f/1.9"},
+  { "value": "Shot on a Leica SL2-S with a 50mm f/2.0 Summicron lens, ISO 320, f/2.8 aperture.", "label": "عکاسی شده با Leica SL2-S و لنز 50mm f/2.0"},
+  { "value": "Captured on a vintage film camera (e.g., Rolleiflex 2.8F) with Kodak Portra 400 film.", "label": "عکاسی شده با دوربین فیلمبرداری وینتیج (مانند Rolleiflex 2.8F) با فیلم کداک پورترا 400" },
+  { "value": "Taken with a drone camera (e.g., DJI Mavic 3) for an aerial perspective.", "label": "گرفته شده با دوربین پهپاد (مانند DJI Mavic 3) برای یک چشم‌انداز هوایی" },
+  { "value": "Smartphone photography (e.g., iPhone 15 Pro Max) with computational bokeh.", "label": "عکاسی با گوشی هوشمند (مانند iPhone 15 Pro Max) با بوکه محاسباتی" }
+]
+    

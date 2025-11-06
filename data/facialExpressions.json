@@ -1,0 +1,18 @@
+
+[
+  { "value": "", "label": "پیش‌فرض (حالت چهره موجود در تصویر)" },
+  { "value": "a genuine, warm smile.", "label": "لبخندی واقعی و گرم" },
+  { "value": "a thoughtful and contemplative expression.", "label": "حالتی متفکرانه و تأملی" },
+  { "value": "a confident and strong gaze.", "label": "نگاهی مطمئن و قوی" },
+  { "value": "a playful and mischievous grin.", "label": "لبخندی بازیگوش و شیطنت‌آمیز" },
+  { "value": "a serene and peaceful look.", "label": "نگاهی آرام و صلح‌آمیز" },
+  { "value": "a determined and focused expression.", "label": "حالتی مصمم و متمرکز" },
+  { "value": "a serious and intense look.", "label": "نگاهی جدی و نافذ" },
+  { "value": "a joyful and laughing expression.", "label": "حالتی شاد و خندان" },
+  { "value": "a dreamy, distant gaze.", "label": "نگاهی رویایی و خیره به دوردست" },
+  { "value": "a surprised expression with wide eyes.", "label": "حالتی متعجب با چشمان گشاد" },
+  { "value": "a relaxed and content smile.", "label": "لبخندی آرام و راضی" },
+  { "value": "a mysterious half-smile.", "label": "نیم‌لبخندی مرموز" },
+  { "value": "a soft, gentle expression.", "label": "حالتی نرم و ملایم" },
+  { "value": "an innocent and curious look.", "label": "نگاهی معصوم و کنجکاو (برای کودک)" }
+]

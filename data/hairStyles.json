@@ -1,0 +1,22 @@
+[
+  { "value": "", "label": "پیشفرض (مدل موی موجود در تصویر)", "gender": "unisex" },
+  { "value": "long flowing wavy hair.", "label": "موهای بلند مواج و روان", "gender": "female" },
+  { "value": "short and sleek bob.", "label": "موهای کوتاه و شیک مدل باب", "gender": "female" },
+  { "value": "braided updo with delicate adornments.", "label": "شینیون بافته شده با تزئینات ظریف", "gender": "female" },
+  { "value": "messy bun with loose strands.", "label": "شینیون نامرتب با تارهای رها", "gender": "female" },
+  { "value": "sharp, modern fade haircut.", "label": "مدل موی فید تیز و مدرن", "gender": "male" },
+  { "value": "classic side-parted hairstyle.", "label": "مدل موی کلاسیک فرق از بغل", "gender": "male" },
+  { "value": "textured quiff.", "label": "مدل موی کویف با بافت", "gender": "male" },
+  { "value": "long, straight hair with bangs.", "label": "موهای بلند و صاف با چتری", "gender": "female" },
+  { "value": "curly afro.", "label": "موهای مجعد آفرو", "gender": "unisex" },
+  { "value": "slicked-back hairstyle.", "label": "مدل موی شانه شده به عقب", "gender": "male" },
+  { "value": "elegant chignon.", "label": "شینیون ظریف و مجلسی", "gender": "female" },
+  { "value": "ponytail with volume.", "label": "دم اسبی با حجم", "gender": "female" },
+  { "value": "youthful pigtails.", "label": "مدل موی بچگانه خرگوشی", "gender": "child" },
+  { "value": "boyish short haircut.", "label": "مدل موی کوتاه پسرانه", "gender": "child" },
+  { "value": "pixie cut.", "label": "مدل موی پیکسی", "gender": "female" },
+  { "value": "dreadlocks.", "label": "مدل موی دردلاک", "gender": "unisex" },
+  { "value": "natural, untamed curls.", "label": "موهای فر طبیعی و رام نشده", "gender": "unisex" },
+  { "value": "vintage finger waves.", "label": "موجهای انگشتی وینتیج", "gender": "female" },
+  { "value": "half-up, half-down style.", "label": "مدل موی نیمه باز، نیمه بسته", "gender": "female" }
+]

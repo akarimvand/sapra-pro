@@ -1,0 +1,17 @@
+[
+  { "value": "", "label": "پیشفرض (آرایش موجود در تصویر)", "gender": "unisex" },
+  { "value": "natural, minimal makeup with a fresh glow.", "label": "آرایش طبیعی و مینیمال با درخشش تازه", "gender": "female" },
+  { "value": "dramatic smoky eyes with nude lips.", "label": "آرایش چشم دودی دراماتیک با لبهای نود", "gender": "female" },
+  { "value": "bold red lipstick with classic winged eyeliner.", "label": "رژ لب قرمز تیره با خط چشم بالدار کلاسیک", "gender": "female" },
+  { "value": "soft glam makeup with subtle contour and highlight.", "label": "آرایش گلامور نرم با کانتور و هایلایت ظریف", "gender": "female" },
+  { "value": "no makeup, completely bare face for a raw look.", "label": "بدون آرایش، صورت کاملاً طبیعی برای ظاهری دست نخورده", "gender": "unisex" },
+  { "value": "dewy skin finish with rosy cheeks.", "label": "پوست شبنمدار با گونههای گلگون", "gender": "female" },
+  { "value": "graphic eyeliner with a pop of color.", "label": "خط چشم گرافیکی با رنگی شاداب", "gender": "female" },
+  { "value": "glitter eyeshadow with a festive touch.", "label": "سایه چشم اکلیلی با جلوهای جشنگونه", "gender": "female" },
+  { "value": "vintage-inspired makeup with thin brows and a Cupid's bow lip.", "label": "آرایش الهام گرفته از وینتیج با ابروهای نازک و لب کمان کیوپید", "gender": "female" },
+  { "value": "sun-kissed bronze makeup.", "label": "آرایش برنزه و آفتابسوخته", "gender": "female" },
+  { "value": "barely-there natural look.", "label": "ظاهر طبیعی تقریباً بدون آرایش", "gender": "unisex" },
+  { "value": "strong brow and subtle lip.", "label": "ابروی پررنگ و لب ظریف", "gender": "unisex" },
+  { "value": "avant-garde artistic makeup.", "label": "آرایش هنری آوانگارد", "gender": "unisex" },
+  { "value": "fresh and youthful appearance.", "label": "ظاهری تازه و جوان", "gender": "child" }
+]

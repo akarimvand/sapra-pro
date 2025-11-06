@@ -1,0 +1,9 @@
+
+[
+  { "value": "", "label": "پیش‌فرض (مدل کادربندی را انتخاب کند)" },
+  { "value": "full body shot", "label": "تمام قد" },
+  { "value": "half body shot", "label": "نیم‌تنه" },
+  { "value": "face shot", "label": "چهره" },
+  { "value": "close-up face shot", "label": "چهره بسته (کلوزآپ)" }
+]
+    

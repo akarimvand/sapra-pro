@@ -1,0 +1,19 @@
+
+[
+  { "value": "", "label": "پیش‌فرض (واقع‌گرایانه و سینمایی)" },
+  { "value": "Cinematic, dreamy, and ultra-realistic, 4K.", "label": "سینمایی، رویایی، فوق‌واقع‌گرایانه، 4K" },
+  { "value": "editorial, vibrant, fashion magazine.", "label": "ادیتوریال، پرجنب و جوش، مجله مد" },
+  { "value": "soft-focus romantic.", "label": "فوکوس نرم رمانتیک" },
+  { "value": "high-contrast cinematic.", "label": "سینمایی با کنتراست بالا" },
+  { "value": "natural documentary style.", "label": "سبک مستند طبیعی" },
+  { "value": "painterly, impressionistic brushstrokes.", "label": "نقاشی‌گونه، با ضربه‌های قلم موی امپرسیونیستی"},
+  { "value": "vaporwave aesthetic, neon glow, retrofuturistic.", "label": "استایل ویپورویو، نور نئون، رتروفوتوریستیک"},
+  { "value": "gritty, urban, street photography feel.", "label": "حس خشن، شهری، عکاسی خیابانی"},
+  { "value": "ethereal, fantastical, dreamlike.", "label": "اثیری، فانتزی، شبیه رویا"},
+  { "value": "surreal, hyper-realistic, with fantastical elements.", "label": "سورئال، فوق‌واقع‌گرایانه، با عناصر فانتزی" },
+  { "value": "minimalist, clean lines, serene.", "label": "مینیمالیستی، خطوط تمیز، آرامش‌بخش" },
+  { "value": "gothic, dark, mysterious atmosphere.", "label": "گوتیک، تاریک، فضای مرموز" },
+  { "value": "cyberpunk, futuristic, dystopian.", "label": "سایبرپانک، آینده‌نگر، دیستوپیایی" },
+  { "value": "traditional Persian miniature painting style, rich in detail and color.", "label": "سبک نقاشی مینیاتور سنتی ایرانی، غنی از جزئیات و رنگ" }
+]
+    

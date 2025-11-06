@@ -1,0 +1,18 @@
+
+[
+  { "value": "", "label": "بدون فیلتر هنری" },
+  { "value": "a vintage film look with desaturated colors, subtle grain, and light leaks.", "label": "وینتیج فیلم (با رنگ‌های دیساتوره و دانه فیلم)" },
+  { "value": "a dramatic noir style with deep shadows, high contrast, and a grayscale palette.", "label": "نوآر (با سایه‌های عمیق و کنتراست بالا)" },
+  { "value": "a warm sepia tone, giving an antique, aged photograph appearance.", "label": "قهوه‌ای تیره (سپیا) برای جلوه‌ای قدیمی" },
+  { "value": "a cinematic color grade with teal and orange tones, wide aspect ratio.", "label": "سینمایی (با رنگ‌های فیروزه‌ای و نارنجی)" },
+  { "value": "a vibrant pop art effect with bold outlines and exaggerated colors.", "label": "پاپ آرت (با رنگ‌های پر جنب و جوش و خطوط برجسته)" },
+  { "value": "a dreamy, ethereal effect with soft focus and glowing highlights.", "label": "اثیری و رویایی (با فوکوس نرم و هایلایت‌های درخشان)" },
+  { "value": "a distressed, grunge texture with faded colors and scratched overlays.", "label": "گرانج و کهنه (با بافت‌های فرسوده و خط و خش)" },
+  { "value": "a futuristic cyberpunk look with neon lighting and metallic sheens.", "label": "سایبرپانک (با نور نئون و جلوه فلزی)" },
+  { "value": "a soft watercolor painting style with diffused edges and delicate color blends.", "label": "نقاشی آبرنگ (با لبه‌های نرم و ترکیب رنگ لطیف)" },
+  { "value": "a sharp, detailed black and white conversion with strong contrast and clarity.", "label": "سیاه و سفید شارپ (با کنتراست قوی و وضوح بالا)" },
+  { "value": "a golden hour glow effect, enhancing warm tones and soft light.", "label": "درخشش ساعت طلایی (با افزایش تناژ گرم)" },
+  { "value": "a dark and moody aesthetic with muted colors and deep shadows.", "label": "تیره و پر رمز و راز (با رنگ‌های مات و سایه‌های عمیق)" },
+  { "value": "a pastel aesthetic with soft, desaturated colors and a gentle, delicate feel.", "label": "پاستلی (با رنگ‌های نرم و دیساتوره)" },
+  { "value": "a vibrant, high-saturation look with boosted colors and sharp details.", "label": "رنگارنگ و با اشباع بالا (با رنگ‌های تقویت شده و جزئیات شارپ)" }
+]

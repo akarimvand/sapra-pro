@@ -1,0 +1,22 @@
+[
+  { "value": "", "label": "پیشفرض (بدون سبک دوره خاص)" },
+  { "value": "1920s vintage photograph, sepia tone, grainy texture, art deco aesthetic, silent film era quality.", "label": "دهه 1920 - عکس وینتیج با تون سپیا و بافت دانهدار" },
+  { "value": "1950s Polaroid instant photo, faded colors, white border frame, nostalgic retro feel.", "label": "دهه 1950 - پولاروید با رنگهای محو و قاب سفید" },
+  { "value": "1960s Kodachrome slide film, vibrant saturated colors, warm tones, classic family photo aesthetic.", "label": "دهه 1960 - فیلم اسلاید کداکروم با رنگهای اشباع" },
+  { "value": "1970s film photography, warm orange and brown tones, soft focus, disco era vibe.", "label": "دهه 1970 - عکاسی فیلم با تونهای نارنجی و قهوهای" },
+  { "value": "1980s neon aesthetic, high contrast, bold colors, VHS tape quality, retro futuristic.", "label": "دهه 1980 - استتیک نئون با کنترست بالا و رنگهای جسورانه" },
+  { "value": "1990s disposable camera look, slightly overexposed, candid snapshot style, mall photo booth quality.", "label": "دهه 1990 - دوربین یکبار مصرف با نوردهی بیش از حد" },
+  { "value": "Early 2000s digital camera aesthetic, slightly pixelated, flash photography, Y2K era.", "label": "اوایل 2000 - دوربین دیجیتال با فلاش و کیفیت پیکسلی" },
+  { "value": "Victorian era daguerreotype, black and white, formal pose, antique photograph from 1800s.", "label": "دوره ویکتوریا (1800) - داگرئوتایپ سیاه و سفید رسمی" },
+  { "value": "1940s wartime photography, black and white, high contrast, documentary style, historical feel.", "label": "دهه 1940 - عکاسی دوران جنگ سیاه و سفید مستند" },
+  { "value": "Tintype photograph from 1860s-1870s, metallic plate, dark vignette, Civil War era aesthetic.", "label": "تین‌تایپ دهه 1860-1870 - صفحه فلزی با وینیت تیره" },
+  { "value": "1930s Great Depression era photo, dusty sepia, worn edges, Dorothea Lange documentary style.", "label": "دهه 1930 - عصر رکود بزرگ با سپیای گرد و غبار آلود" },
+  { "value": "Instant Polaroid SX-70 from 1970s, square format, dreamy soft colors, white frame border.", "label": "پولاروید SX-70 دهه 1970 - فرمت مربع با رنگهای رویایی" },
+  { "value": "Film noir 1940s-1950s, dramatic shadows, high contrast black and white, detective movie aesthetic.", "label": "فیلم نوآر دهه 1940-1950 - سایههای دراماتیک سیاه و سفید" },
+  { "value": "Psychedelic 1960s poster art style, vibrant swirling colors, hippie era, acid trip aesthetic.", "label": "هنر پوستر روانگردان دهه 1960 - رنگهای چرخان و هیپی" },
+  { "value": "Grunge 1990s aesthetic, desaturated colors, grainy texture, alternative rock era vibe.", "label": "استتیک گرانج دهه 1990 - رنگهای کمرنگ و بافت دانهدار" },
+  { "value": "Instagram vintage filter 2010s, Valencia or Nashville preset, hipster aesthetic.", "label": "فیلتر وینتیج اینستاگرام دهه 2010 - پریست والنسیا یا نشویل" },
+  { "value": "Lomography cross-processed film, unexpected color shifts, light leaks, experimental photography.", "label": "لوموگرافی - فیلم پردازش متقاطع با تغییرات رنگ غیرمنتظره" },
+  { "value": "Cyanotype blueprint from 1840s, cyan blue monochrome, botanical print style.", "label": "سیانوتایپ دهه 1840 - تک رنگ آبی سیان به سبک پرینت گیاهی" },
+  { "value": "Autochrome Lumière from 1900s-1910s, first color photography, pointillist color dots, impressionist feel.", "label": "اتوکروم لومیر دهه 1900-1910 - اولین عکاسی رنگی با نقاط رنگی" }
+]

@@ -1,0 +1,25 @@
+
+[
+  { "value": "", "label": "پیش‌فرض (بدون شیء خاص)" },
+  { "value": "posed next to a vintage classic car.", "label": "کنار یک خودروی کلاسیک وینتیج", "tags": ["urban", "vintage", "car"] },
+  { "value": "standing beside an ancient Persian sculpture, rich in detail and history.", "label": "ایستاده کنار یک مجسمه باستانی ایرانی، غنی از جزئیات و تاریخ", "tags": ["persian", "historical", "art"] },
+  { "value": "holding a traditional Persian instrument like a Setar or Tar.", "label": "در حال نگهداری یک ساز سنتی ایرانی مانند سه‌تار یا تار", "tags": ["persian", "music"] },
+  { "value": "with a modern art sculpture in a gallery setting.", "label": "با یک مجسمه هنری مدرن در محیط گالری", "tags": ["indoor", "gallery", "modern", "art"] },
+  { "value": "sitting on a plush velvet armchair.", "label": "نشسته روی یک مبل راحتی مخملی", "tags": ["indoor", "luxury"] },
+  { "value": "near a bookshelf filled with old, leather-bound books.", "label": "کنار قفسه کتابی پر از کتاب‌های قدیمی با جلد چرمی", "tags": ["indoor", "library"] },
+  { "value": "holding a single, vibrant red rose.", "label": "در حال نگهداری یک گل رز قرمز پررنگ", "tags": ["flower", "romantic"] },
+  { "value": "with a loyal pet dog by their side.", "label": "با یک سگ وفادار کنارش", "tags": ["pet", "animal"] },
+  { "value": "next to a grand piano in a dimly lit room.", "label": "کنار یک پیانوی بزرگ در یک اتاق کم‌نور", "tags": ["indoor", "music"] },
+  { "value": "leaning against a vintage motorcycle.", "label": "تکیه داده به یک موتورسیکلت وینتیج", "tags": ["urban", "vintage", "motorcycle"] },
+  { "value": "holding a magic glowing orb.", "label": "در حال نگهداری یک کره درخشان جادویی", "tags": ["fantasy"] },
+  { "value": "playing with colorful building blocks.", "label": "در حال بازی با بلوک‌های ساختمانی رنگارنگ (برای کودک)", "tags": ["child", "toy", "indoor"] },
+  { "value": "sitting on a rocking horse.", "label": "نشسته روی اسب گهواره‌ای (برای کودک)", "tags": ["child", "toy", "indoor"] },
+  { "value": "holding a beautiful bouquet of white roses.", "label": "در حال نگهداری یک دسته گل رز سفید زیبا", "tags": ["flower", "wedding", "romantic", "celebration"] },
+  { "value": "a multi-tiered wedding cake with delicate frosting.", "label": "کیک عروسی چند طبقه با خامه کاری ظریف", "tags": ["wedding", "celebration", "food", "indoor"] },
+  { "value": "a pair of gleaming wedding rings on a velvet cushion.", "label": "یک جفت حلقه ازدواج درخشان روی یک کوسن مخملی", "tags": ["wedding", "jewelry", "indoor"] },
+  { "value": "clinking champagne glasses for a celebratory toast.", "label": "به هم زدن لیوان‌های شامپاین برای یک نان تست جشن", "tags": ["celebration", "party", "drink", "indoor"] },
+  { "value": "holding a bunch of colorful balloons.", "label": "در حال نگهداری یک دسته بادکنک رنگارنگ", "tags": ["birthday", "party", "celebration", "indoor", "outdoor"] },
+  { "value": "a birthday cake with flickering candles.", "label": "کیک تولد با شمع‌های سوسو زننده", "tags": ["birthday", "celebration", "food", "indoor", "outdoor"] },
+  { "value": "wearing festive party hats and surrounded by confetti.", "label": "پوشیدن کلاه‌های جشن و احاطه شده با کاغذ رنگی", "tags": ["birthday", "party", "celebration", "indoor", "outdoor"] },
+  { "value": "opening brightly wrapped gifts.", "label": "باز کردن هدایای با بسته‌بندی روشن", "tags": ["birthday", "celebration", "gift", "indoor", "outdoor"] }
+]
