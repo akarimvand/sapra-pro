@@ -537,36 +537,39 @@ document.getElementById('downloadImageBtn')?.addEventListener('click', async () 
   ctx.fillText(line, 100, y);
   
   // Persian translation section
-  y += 100;
-  if (y < canvas.height - 400) {
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
-    ctx.roundRect(60, y, canvas.width - 120, 250, 20);
-    ctx.fill();
-    
-    ctx.fillStyle = accentColor;
-    ctx.font = 'bold 36px Vazirmatn, Arial';
-    ctx.textAlign = 'center';
-    ctx.fillText('ترجمه فارسی:', canvas.width / 2, y + 40);
-    
-    ctx.fillStyle = '#ffffff';
-    ctx.font = '32px Vazirmatn, Arial';
-    ctx.textAlign = 'right';
-    const persianWords = persianPrompt.split(' ');
-    let persianLine = '';
-    let persianY = y + 80;
-    
-    for (let i = 0; i < persianWords.length; i++) {
-      const testLine = persianLine + persianWords[i] + ' ';
-      const metrics = ctx.measureText(testLine);
-      if (metrics.width > maxWidth && i > 0) {
+  y += 80;
+  const boxHeight = canvas.height - y - 150;
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+  ctx.roundRect(60, y, canvas.width - 120, boxHeight, 20);
+  ctx.fill();
+  
+  ctx.fillStyle = accentColor;
+  ctx.font = 'bold 36px Vazirmatn, Arial';
+  ctx.textAlign = 'center';
+  ctx.fillText('ترجمه فارسی:', canvas.width / 2, y + 45);
+  
+  ctx.fillStyle = '#ffffff';
+  ctx.font = '28px Vazirmatn, Arial';
+  ctx.textAlign = 'right';
+  const persianWords = persianPrompt.split(' ');
+  let persianLine = '';
+  let persianY = y + 90;
+  const maxPersianY = y + boxHeight - 20;
+  
+  for (let i = 0; i < persianWords.length; i++) {
+    const testLine = persianLine + persianWords[i] + ' ';
+    const metrics = ctx.measureText(testLine);
+    if (metrics.width > maxWidth && i > 0) {
+      if (persianY < maxPersianY) {
         ctx.fillText(persianLine, canvas.width - 100, persianY);
         persianLine = persianWords[i] + ' ';
-        persianY += 40;
-        if (persianY > y + 230) break;
-      } else {
-        persianLine = testLine;
-      }
+        persianY += 38;
+      } else break;
+    } else {
+      persianLine = testLine;
     }
+  }
+  if (persianY < maxPersianY) {
     ctx.fillText(persianLine, canvas.width - 100, persianY);
   }
   
