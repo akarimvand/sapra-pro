@@ -440,6 +440,11 @@ document.getElementById('themeToggle')?.addEventListener('click', () => {
 });
 
 document.getElementById('downloadImageBtn')?.addEventListener('click', async () => {
+  const btn = document.getElementById('downloadImageBtn');
+  const originalText = btn.innerHTML;
+  btn.innerHTML = '<span class="material-icons text-sm">hourglass_empty</span> در حال ترجمه...';
+  btn.disabled = true;
+  
   const prompt = document.getElementById('finalPrompt').value;
   
   // Get Persian translation
@@ -492,13 +497,13 @@ document.getElementById('downloadImageBtn')?.addEventListener('click', async () 
   
   // Header
   ctx.fillStyle = '#ffffff';
-  ctx.font = 'bold 70px Arial';
+  ctx.font = 'bold 70px Vazirmatn, Arial';
   ctx.textAlign = 'center';
   ctx.fillText('پرامپت ساز حرفه‌ای', canvas.width / 2, 120);
   
   // Subtitle
   ctx.fillStyle = accentColor;
-  ctx.font = '40px Arial';
+  ctx.font = '40px Vazirmatn, Arial';
   ctx.fillText('Sapra Pro', canvas.width / 2, 190);
   
   // Card background
@@ -508,7 +513,7 @@ document.getElementById('downloadImageBtn')?.addEventListener('click', async () 
   
   // Prompt text - larger font
   ctx.fillStyle = '#ffffff';
-  ctx.font = '36px Arial';
+  ctx.font = '32px Arial';
   ctx.textAlign = 'left';
   
   const maxWidth = canvas.width - 160;
@@ -539,12 +544,12 @@ document.getElementById('downloadImageBtn')?.addEventListener('click', async () 
     ctx.fill();
     
     ctx.fillStyle = accentColor;
-    ctx.font = 'bold 32px Arial';
+    ctx.font = 'bold 36px Vazirmatn, Arial';
     ctx.textAlign = 'center';
     ctx.fillText('ترجمه فارسی:', canvas.width / 2, y + 40);
     
     ctx.fillStyle = '#ffffff';
-    ctx.font = '28px Arial';
+    ctx.font = '32px Vazirmatn, Arial';
     ctx.textAlign = 'right';
     const persianWords = persianPrompt.split(' ');
     let persianLine = '';
@@ -567,7 +572,7 @@ document.getElementById('downloadImageBtn')?.addEventListener('click', async () 
   
   // Footer
   ctx.fillStyle = accentColor;
-  ctx.font = '28px Arial';
+  ctx.font = '28px Vazirmatn, Arial';
   ctx.textAlign = 'center';
   ctx.fillText('Developed by Amin Naseri Karimvand', canvas.width / 2, canvas.height - 80);
   ctx.fillText('akarimvand@gmail.com', canvas.width / 2, canvas.height - 40);
@@ -580,6 +585,9 @@ document.getElementById('downloadImageBtn')?.addEventListener('click', async () 
     a.download = 'sapra-prompt-' + Date.now() + '.png';
     a.click();
     URL.revokeObjectURL(url);
+    
+    btn.innerHTML = originalText;
+    btn.disabled = false;
   });
 });
 
