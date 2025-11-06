@@ -572,35 +572,6 @@ document.getElementById('downloadImageBtn')?.addEventListener('click', async () 
   ctx.fillText('Developed by Amin Naseri Karimvand', canvas.width / 2, canvas.height - 80);
   ctx.fillText('akarimvand@gmail.com', canvas.width / 2, canvas.height - 40);
   
-  // Selection details box
-  y += 80;
-  ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
-  ctx.roundRect(60, y, canvas.width - 120, 300, 20);
-  ctx.fill();
-  
-  // Selection details title
-  ctx.fillStyle = accentColor;
-  ctx.font = 'bold 32px Arial';
-  ctx.textAlign = 'center';
-  ctx.fillText('انتخابهای شما', canvas.width / 2, y + 50);
-  
-  // Selection details
-  ctx.fillStyle = '#ffffff';
-  ctx.font = '28px Arial';
-  ctx.textAlign = 'right';
-  let detailY = y + 100;
-  
-  const details = [];
-  if (selections.gender) details.push(`جنسیت: ${allData.gender?.find(g => g.value === selections.gender)?.label || ''}`);
-  if (selections.ageGroup) details.push(`سن: ${allData.ageGroup?.find(a => a.value === selections.ageGroup)?.label || ''}`);
-  if (selections.clothing) details.push(`لباس: ${allData.clothing?.find(c => c.value === selections.clothing)?.label || ''}`);
-  if (selections.backgrounds) details.push(`پسزمینه: ${allData.backgrounds?.find(b => b.value === selections.backgrounds)?.label || ''}`);
-  
-  details.slice(0, 4).forEach(detail => {
-    ctx.fillText(detail, canvas.width - 100, detailY);
-    detailY += 45;
-  });
-  
   // Download
   canvas.toBlob(blob => {
     const url = URL.createObjectURL(blob);
