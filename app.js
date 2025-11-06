@@ -596,12 +596,9 @@ document.getElementById('downloadImageBtn')?.addEventListener('click', async () 
 
 document.getElementById('editImageChoice')?.addEventListener('click', () => {
   isEditMode = true;
-  isPresetMode = true;
   document.getElementById('choicePage').classList.add('hidden');
-  document.getElementById('mainContent').classList.remove('hidden');
-  document.getElementById('bottomNav').classList.remove('hidden');
+  document.getElementById('methodChoicePage').classList.remove('hidden');
   document.getElementById('backBtn').style.display = 'block';
-  showPage(0);
 });
 
 document.getElementById('createImageChoice')?.addEventListener('click', () => {
