@@ -439,8 +439,16 @@ document.getElementById('themeToggle')?.addEventListener('click', () => {
   document.getElementById('themeToggle').innerHTML = isDarkMode ? '<span class="material-icons">light_mode</span>' : '<span class="material-icons">dark_mode</span>';
 });
 
-document.getElementById('downloadImageBtn')?.addEventListener('click', () => {
+document.getElementById('downloadImageBtn')?.addEventListener('click', async () => {
   const prompt = document.getElementById('finalPrompt').value;
+  
+  // Get Persian translation
+  let persianPrompt = '';
+  if (!translatedPrompt) {
+    persianPrompt = await translateText(prompt);
+  } else {
+    persianPrompt = translatedPrompt;
+  }
   
   // Determine theme colors based on selections
   let gradientStart, gradientEnd, accentColor;
@@ -522,6 +530,40 @@ document.getElementById('downloadImageBtn')?.addEventListener('click', () => {
     }
   }
   ctx.fillText(line, 100, y);
+  
+  // Persian translation section
+  y += 100;
+  if (y < canvas.height - 400) {
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+    ctx.roundRect(60, y, canvas.width - 120, 250, 20);
+    ctx.fill();
+    
+    ctx.fillStyle = accentColor;
+    ctx.font = 'bold 32px Arial';
+    ctx.textAlign = 'center';
+    ctx.fillText('ترجمه فارسی:', canvas.width / 2, y + 40);
+    
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '28px Arial';
+    ctx.textAlign = 'right';
+    const persianWords = persianPrompt.split(' ');
+    let persianLine = '';
+    let persianY = y + 80;
+    
+    for (let i = 0; i < persianWords.length; i++) {
+      const testLine = persianLine + persianWords[i] + ' ';
+      const metrics = ctx.measureText(testLine);
+      if (metrics.width > maxWidth && i > 0) {
+        ctx.fillText(persianLine, canvas.width - 100, persianY);
+        persianLine = persianWords[i] + ' ';
+        persianY += 40;
+        if (persianY > y + 230) break;
+      } else {
+        persianLine = testLine;
+      }
+    }
+    ctx.fillText(persianLine, canvas.width - 100, persianY);
+  }
   
   // Footer
   ctx.fillStyle = accentColor;
